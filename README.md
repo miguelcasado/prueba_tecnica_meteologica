@@ -47,12 +47,12 @@ En paralelo, se calculan la temperatura media acumulada y la energía total prod
 ## Estructura del código
 src/
 ├─ lib/
-│ ├─ components/ # Gráfico, tabla y tarjetas de estadísticas
-│ ├─ services/ # Generador de datos en tiempo real
-│ ├─ utils/ # Funciones de conversión, tiempo, agregación y carga YAML
-│ └─ types.ts # Definición de tipos de datos
+│  ├─ components/     # Gráfico, tabla y tarjetas de estadísticas
+│  ├─ services/       # Generador de datos en tiempo real
+│  ├─ utils/          # Funciones de conversión, tiempo, agregación y carga YAML
+│  └─ types.ts        # Definición de tipos de datos
 └─ routes/
-└─ +page.svelte # Página principal y lógica de visualización
+   └─ +page.svelte    # Página principal y lógica de visualización
 
 
 ---
