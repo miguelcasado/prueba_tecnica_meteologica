@@ -1,3 +1,4 @@
+```markdown
 # Documentación
 
 Aplicación web desarrollada con **Svelte 5** y **TypeScript** que visualiza datos meteorológicos a partir de un archivo `data.yml`.  
@@ -40,21 +41,23 @@ En paralelo, se calculan la temperatura media acumulada y la energía total prod
    - **Gráfico:** muestra la evolución de la temperatura o energía según el intervalo seleccionado.  
    - **Tarjetas:** indican la temperatura media y la energía total acumulada.  
    - **Tabla:** lista los últimos valores registrados, destacando el más reciente con un degradado visual.
----
 
 ---
 
 ## Estructura del código
+
+Para que el árbol de archivos se muestre correctamente en GitHub, lo dejo en un bloque de código monoespaciado:
+
+```text
 src/
-├─ lib/
-│  ├─ components/     # Gráfico, tabla y tarjetas de estadísticas
-│  ├─ services/       # Generador de datos en tiempo real
-│  ├─ utils/          # Funciones de conversión, tiempo, agregación y carga YAML
-│  └─ types.ts        # Definición de tipos de datos
-└─ routes/
-   └─ +page.svelte    # Página principal y lógica de visualización
-
-
+├── lib/
+│   ├── components/     # Gráfico, tabla y tarjetas de estadísticas
+│   ├── services/       # Generador de datos en tiempo real
+│   ├── utils/          # Funciones de conversión, tiempo, agregación y carga YAML
+│   └── types.ts        # Definición de tipos de datos
+└── routes/
+    └── +page.svelte    # Página principal y lógica de visualización
+```
 ---
 
 ## Instalación y ejecución
@@ -72,10 +75,9 @@ npm install
 # Ejecutar en modo desarrollo
 npm run dev
 
-# Abrir en el navegador
+# Abrir en el navegador (por defecto Vite)
 http://localhost:5173
-
-
+```
 
 Notas adicionales
 
@@ -84,3 +86,4 @@ La actualización cada 5 segundos se basa en la hora del sistema, alineando los 
 Los cálculos se realizan en memoria, sin dependencias de servidor.
 
 Se utilizan componentes modulares de Svelte para separar la visualización del procesamiento de datos.
+```
